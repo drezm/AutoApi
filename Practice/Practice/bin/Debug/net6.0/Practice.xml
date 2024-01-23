@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Practice</name>
+    </assembly>
+    <members>
+        <member name="M:Practice.Controllers.AdStatusController.GetAll">
+            <summary>
+            Вывод всех записей об объявлениях
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "StatusName" : "Снято с публикации"
+                    }
+            </remarks>
+            <param name="model">Статус объявления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.AdStatusController.Add(Practice.Contracts.AdStatus.CreateAdStatusDto)">
+            <summary>
+            Добавление новой записи о статусе объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "StatusName" : "Снято с публикации"
+                    }
+            </remarks>
+            <param name="model">Статус объявления</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.AdStatusController.GetByld(System.Int32)">
+            <summary>
+            Поиск записи по id о статусе объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "Ввести id для вывода информации"
+                    }
+            </remarks>
+            <param name="model">Статус объявления</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.AdStatusController.Update(Practice.Contracts.AdStatus.UpdateAdStatusDto)">
+            <summary>
+            Обновление записи о статусе объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "StatusName" : "Снято с публикации"
+                    }
+            </remarks>
+            <param name="model">Статус объявления</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.AdStatusController.Delete(System.Int32)">
+            <summary>
+            Удаление записи о статусе объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        Ввести id записи о статусе, которые нужно удалить
+                    }
+            </remarks>
+            <param name="model">Статус объявления</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.AdvertisementController.GetAll">
+            <summary>
+            Вывод всех записей о объявлениях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Объявление</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.AdvertisementController.Add(Practice.Contracts.Advertisement.CreateAdvertisementDto)">
+            <summary>
+            Создание нового объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "StatusName" : "Снято с публикации"
+                        "UserId" : "Например пользователь с id: 1 пользователь которому принадлежит объявление"
+                        "CarId" : "Id машины, которая в объявлении"
+                        "AdStatusId" : "id статуса объяввление (Актуально)"
+                        "Title" : "Название для объявления "Lada Granta""
+                        "Discription" : "Описания для описания (Новая без царапин, некрашена)"
+                        "EditBy" : "ID пользователя, который изменил объявление"
+                        "EditTime" : "Вреия изменения 17:00:00""AdId" : "Id объявления, которое нужно изменения"
+                        "UserId" : "Например пользователь с id: 1 пользователь которому принадлежит объявление"
+                        "CarId" : "Id машины, которая в объявлении"
+                        "AdStatusId" : "id статуса объяввление (Актуально)"
+                        "Title" : "Название для объявления "Lada Granta""
+                        "Discription" : "Описания для описания (Новая без царапин, некрашена)"
+                        "AddedBy" : "ID пользователя, который изменил объявление"
+                        "AddedTime" : "Время добавления 17:00:00"
+                    }
+            </remarks>
+            <param name="model">Добавление объявления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.AdvertisementController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id объявления"
+                    }
+            </remarks>
+            <param name="model">Получение информации об объявлении</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.AdvertisementController.Update(Practice.Contracts.Advertisement.UpdateAdvertisementDto)">
+            /// <summary>
+            Создание нового объявления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "AdId" : "Id объявления, которое нужно измененить"
+                        "UserId" : "Например пользователь с id: 1 пользователь которому принадлежит объявление"
+                        "CarId" : "Id машины, которая в объявлении"
+                        "AdStatusId" : "id статуса объяввление (Актуально)"
+                        "Title" : "Название для объявления "Lada Granta""
+                        "Discription" : "Описания для описания (Новая без царапин, некрашена)"
+                        "EditBy" : "ID пользователя, который изменил объявление"
+                        "EditTime" : "Вреия изменения 17:00:00"
+                    }
+            </remarks>
+            <param name="model">Добавление объявления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.AdvertisementController.Delete(System.Int32)">
+            <summary>
+            Удаление обновления
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id записи объявления, который нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление объявления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarController.GetAll">
+            <summary>
+            Вывод всех записей о объявлениях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Объявление</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.CarController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id машины"
+                    }
+            </remarks>
+            <param name="model">Получение информации о машине</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarController.Add(Practice.Contracts.Car.CreateCarDto)">
+            <summary>
+            Создание новой машины
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "ModelId" : "ID модели автомобиля"
+                        "CarStatusId" : "ID статуса автомобиля (новое)"
+                        "UserId" : "Например пользователь с id: 1 пользователь которому принадлежит машина"
+                        "ManufacturingYear" : "Год выпуска автомобиля (2020)"
+                        "Mileage" : "Пробег автомобился (45000)"
+                        "Price" : "Цена автомобиля (1200000)"
+                        "Image" : "URL для  картинки"
+                        "Description" : "Описание машины (новая, мультимедия CarPlay)"
+                        "Color" : "Код цвета #fffff"
+                    }
+            </remarks>
+            <param name="model">Создание новой машины</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarController.Update(Practice.Contracts.Car.UpdateCarDto)">
+            <summary>
+            Обновление существующей машины
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "CarId" : "Id машины, которую нужно изменить"
+                        "ModelId" : "ID модели автомобиля"
+                        "CarStatusId" : "ID статуса автомобиля (новое)"
+                        "UserId" : "Например пользователь с id: 1 пользователь которому принадлежит машина"
+                        "ManufacturingYear" : "Год выпуска автомобиля (2020)"
+                        "Mileage" : "Пробег автомобился (45000)"
+                        "Price" : "Цена автомобиля (1200000)"
+                        "Image" : "URL для  картинки"
+                        "Description" : "Описание машины (новая, мультимедия CarPlay)"
+                        "Color" : "Код цвета #fffff"
+                    }
+            </remarks>
+            <param name="model">Добавление объявления</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarController.Delete(System.Int32)">
+            <summary>
+            Удаление машины
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id записи машины, которую нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление машины</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarStatusController.GetAll">
+            <summary>
+            Вывод всех записей о объявлениях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Объявление</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.CarStatusController.Add(Practice.Contracts.CarStatus.CreateCarStatusDto)">
+            <summary>
+            Создание нового статуса
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "StatusName" : "Введите название статуса"
+                    }
+            </remarks>
+            <param name="model">Создание нового статуса</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarStatusController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id статуса машины"
+                    }
+            </remarks>
+            <param name="model">Получение информации о статусах</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarStatusController.Update(Practice.Contracts.CarStatus.UpdateCarStatusDto)">
+            <summary>
+            Обновление существующего статуса
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "CarStatusId" : "Id статуса, который нужно изменить"
+                        "StatusName" : "Название статуса"
+                    }
+            </remarks>
+            <param name="model">Изменение статуса</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.CarStatusController.Delete(System.Int32)">
+            <summary>
+            Удаление статуса
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id записи статуса, который нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление статуса</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.MessageController.GetAll">
+            <summary>
+            Вывод всех сообщениях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Сообщения</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.MessageController.Add(Practice.Contracts.Message.CreateMessageDto)">
+            <summary>
+            Создание нового сообщения
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "UserId" : "ID польщоывтеля, кому пренадлежит сообщение"
+                        "AddedBy" : "ID пользователя кем добавлено сообщение"
+                        "AddedTime" : "Время добавления сообщения (23:51:00)"
+                        "Contents" : "Содержимое сообщения (Привет, как дела?)"
+                        "ChatId" : "ID чата, к которому принадлежит сообщение"
+                    }
+            </remarks>
+            <param name="model">Создание нового сообщения</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.MessageController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id сообщения"
+                    }
+            </remarks>
+            <param name="model">Получение информации о сообщении</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.MessageController.Update(Practice.Contracts.Message.UpgradeMessageDto)">
+            <summary>
+            Изменение существующего сообщения
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "MessageId" :  "Id сообщения, которое нужно изменить"
+                        "UserId" : "ID польщоывтеля, кому пренадлежит сообщение"
+                        "AddedBy" : "ID пользователя кем добавлено сообщение"
+                        "AddedTime" : "Время добавления сообщения (23:51:00)"
+                        "Contents" : "Содержимое сообщения (Привет, как дела?)"
+                        "ChatId" : "ID чата, к которому принадлежит сообщение"
+                    }
+            </remarks>
+            <param name="model">Изменение существующего сообщения</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.MessageController.Delete(System.Int32)">
+            <summary>
+            Удаление сообщения
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id сообщения, которое нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление сообщения</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.ModelController.GetAll">
+            <summary>
+            Вывод всех записей о моделях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Модели</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.ModelController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id модели"
+                    }
+            </remarks>
+            <param name="model">Получение информации о моделях</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.ModelController.Add(Practice.Contracts.Model.CreateModalDto)">
+            <summary>
+            Создание новой модели машины
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Model1" : "Введите название модели (Creta)"
+                        "Brand" : ""Введите название марку машину (Kia)"
+                    }
+            </remarks>
+            <param name="model">Создание новой модели машины</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.ModelController.Update(Practice.Contracts.Model.UpdateModalDto)">
+            <summary>
+            Обновление существующей  модели
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "ModelId" : "ID модели, которую нужно изменить"
+                        "Model1" : "Введите название модели (Creta)"
+                        "Brand" : ""Введите название марку машину (Kia)"
+                    }
+            </remarks>
+            <param name="model">Обновление существующей  модели</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.ModelController.Delete(System.Int32)">
+            <summary>
+            Удаление модели
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id модели, которую нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление модели</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.OwnerController.GetAll(Practice.Contracts.Owner.GetOwnerDto)">
+            <summary>
+            Вывод всех записей о владельцах
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Владельцы</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.OwnerController.Add(Practice.Contracts.Owner.CreateOwnerDto)">
+            <summary>
+            Создание нового владельца
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "TenurePeriodFrom" : "Начало владения транспортом 31.09.2020"
+                        "TenurePeriodTo" : "Окончание владения транспортом 31.12.2022"
+                        "CarId" : "ID машины, которая пренадлежит владельцу "
+                    }
+            </remarks>
+            <param name="model">Создание нового владельца</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.OwnerController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id владельца"
+                    }
+            </remarks>
+            <param name="model">Получение информации о владельце</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.OwnerController.Update(Practice.Contracts.Owner.UpdateOwnerDto)">
+            <summary>
+            Обновление существующего владеельца
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "OwnnerId" : "Ввести id владельца, информацию о которых нужно изменить"
+                        "TenurePeriodFrom" : "Начало владения транспортом 31.09.2020"
+                        "TenurePeriodTo" : "Окончание владения транспортом 31.12.2022"
+                        "CarId" : "ID машины, которая пренадлежит владельцу "
+                    }
+            </remarks>
+            <param name="model">Обновление существующего владеельца</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.OwnerController.Delete(System.Int32)">
+            <summary>
+            Удаление владельца
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id владельца машины, которого нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление владельца</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.RoleController.GetAll">
+            <summary>
+            Вывод всех записей о ролях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Роли</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.RoleController.Add(Practice.Contracts.Role.CreateRoleDto)">
+            <summary>
+            Создание новой роли
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Name" : "Введите название новой роли"
+                    }
+            </remarks>
+            <param name="model">Создание новой роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.RoleController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id роли
+                    }
+            </remarks>
+            <param name="model">Получение информации о ролях</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.RoleController.Update(Practice.Contracts.Role.UpdateRoleDto)">
+            <summary>
+            Обновление существующеЙ роли
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "RoleId" : "Ввести id роли, информацию о котой нужно изменить"
+                        "Name" : "Название роли, которую меняете "
+                    }
+            </remarks>
+            <param name="model">Обновление существующеЙ роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.RoleController.Delete(System.Int32)">
+            <summary>
+            Удаление роли
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id роли пользователя,  которую нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление владельца</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.UsersController.GetAll">
+            <summary>
+            Вывод всех записей о пользователях
+            </summary>
+            <remarks>
+             Пример запроса:
+            </remarks>
+            <param name="model">Пользователи</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Practice.Controllers.UsersController.GetByld(System.Int32)">
+            <summary>
+            Поиск по id
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "id" : "id пользователя
+                    }
+            </remarks>
+            <param name="model">Получение информации о пользователях</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.UsersController.Add(Practice.Contracts.User.CreateUserRequest)">
+            <summary>
+            Создание нового пользователя
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "UserName" : "Введите логин нового пользователя"
+                        "Email" : "Введите почту нового пользователя"
+                        "Password" : "Введите пароль нового пользователя"
+                        "Location" : "Введите местоположении нового пользователя"
+                        "RoleId" : "Введите роль нового пользователя"
+                    }
+            </remarks>
+            <param name="model">Создание нового пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.UsersController.Update(Practice.Contracts.User.UserUpdateDto)">
+            <summary>
+             Изменение нового пользователя
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "UserID" : "id пользователя, в котором нужно изменить данные"
+                        "UserName" : "Введите логин нового пользователя"
+                        "Email" : "Введите почту нового пользователя"
+                        "Password" : "Введите пароль нового пользователя"
+                        "Location" : "Введите местоположении нового пользователя"
+                        "RoleId" : "Введите роль нового пользователя"
+                    }
+            </remarks>
+            <param name="model">Создание нового пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:Practice.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Удаление пользователя
+            </summary>
+            <remarks>
+             Пример запроса:
+             
+                    {
+                        "Ввести id пользователя,  которого нужно удалить"
+                    }
+            </remarks>
+            <param name="model">Удаление польщователя</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
